@@ -1,0 +1,235 @@
+/* --- 1. RESET & VARIABLES ---*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #063a5e;
+    --nav-color: #ec95f4;
+    --nav-text-color: #e5eef0;
+    --font-color: #110e0e;
+    --background-color: #f4f4f4;
+    --site-font: 'Acme', sans-serif;
+    --box-shadow: 0 0 15px #808080;
+}
+
+/* --- 2. GLOBAL STYLES --- */
+body {
+    font-family: var(--site-font);
+    background-color: var(--background-color);
+    color: var(--font-color);
+    box-shadow: var(--box-shadow);
+}
+
+section {
+    padding: 15px;
+    margin: 8px;
+}
+
+h2,
+p,
+#course-list,
+#course-list a,
+figure {
+    padding: 5px;
+    margin: 8px 0;
+}
+
+section,
+.profile,
+h2,
+#course-list a,
+figure {
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+}
+
+section,
+.profile,
+figure {
+    background-color: #f3f3f3;
+}
+
+/* --- 3. LAYOUT STRUCTURE --- */
+header,
+footer {
+    font-family: var(--site-font);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    align-items: end;
+    padding: 5px 0px 5px 10px;
+    column-gap: 8px;
+    border-bottom: solid 1px #ddd;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+
+h1 {
+    margin-left: 10px;
+}
+
+h2 {
+    align-content: center;
+    text-align: center;
+    background-color: var(--main-color);
+    color: var(--nav-text-color);
+}
+
+.about-me p {
+    font-size: 1.3rem;
+}
+
+/* --- 4. NAVIGATION & HAMBURGER --- */
+
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    font-size: 2rem;
+}
+
+/* --- 5. NAVIGATION --- */
+.navigation {
+    display: none;
+    background-color: var(--main-color);
+    font-family: var(--site-font);
+    color: var(--nav-color);
+    font-size: 1.5rem;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    color: var(--nav-color);
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    border-bottom: solid 1px var(--main-color);
+}
+
+.navigation a:hover {
+    background-color: var(--nav-color);
+    color: var(--font-color);
+}
+
+.navigation li.active {
+    text-decoration: underline;
+}
+
+/* ---Web and Computer Programming Certificate--- */
+.course p {
+    align-content: center;
+    text-align: center;
+}
+
+.course ul li p{
+    text-align: left;
+}
+
+#course-list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+#course-list a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    border: none;
+    text-decoration: none;
+    background-color: var(--main-color);
+    font-family: var(--site-font);
+    color: var(--nav-color);
+    font-size: 1.25em;
+}
+
+#course-list a:hover {
+    background-color: var(--nav-color);
+    color: var(--font-color);
+}
+
+#course-list li.active {
+    text-decoration: underline;
+}
+
+
+/* --- Footer--- */
+footer {
+    background-color: var(--main-color);
+    color: var(--nav-text-color);
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.socialmedia a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    box-shadow: var(--box-shadow);
+}
+
+.socialmedia img {
+    width: 22px;
+    height: 22px;
+}
+
+.socialmedia a:hover {
+    background-color: var(--nav-color);
+}
+
+
+/* --- 6. IMAGES & FIGURES --- */
+.profile {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 4/5;
+}

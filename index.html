@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <meta name="description" content="A page that demonstrates my prerequisite knowledge of HTML, CSS and JavaScript.">
+    <meta name="author" content="Lebogang Masenya">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <script src="scripts/date.js" defer=""></script>
+    <script src="scripts/navigation.js" defer=""></script>
+    <script src="scripts/course.js" defer=""></script>
+
+</head>
+<body>
+    <header>
+        <img src="images/softwareicon.png" alt="site logo" width="2" height="2">
+        <span>Lebogang Masenya</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div class="hero">
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>I am Lebogang, currently furthering my degree of Software Development at Brigham Young University-Idaho. I am focussing on building practical applications and mastering modern technologies. I enjoy solving logic problems and building magnificent websites. I am consistently working to expand my technical toolkit.</p>
+        </section>
+        <section>
+            <h2>Student Photo</h2>
+            <img class="profile" src="images/profile.jpg" alt="A photo of myself" width="250" height="300">
+        </section>
+        </div>
+        <section class="course">
+            <h2>Web and Computer Programming Certificate</h2>
+            <p>The total number of credits listed below is <span id="totalCredits">12</span> </p>
+        <div id="card-container"><figure class="completed-course">
+            <h2>CSE 110:<br>Introduction to Programming</h2>
+            <p>Credits: 2</p>
+            <p>Certificate: Web and Computer Programming</p>
+            <p>Description: This course will introduce students to programming. It will introduce the building blocks of programming languages (variables, decisions, calculations, loops, array, and input/output) and use them to solve problems.</p>
+            <p>Technology: Python</p>
+            </figure>
+            <figure class="completed-course">
+            <h2>WDD 130:<br>Web Fundamentals</h2>
+            <p>Credits: 2</p>
+            <p>Certificate: Web and Computer Programming</p>
+            <p>Description: This course introduces students to the World Wide Web and to careers in web site design and development. The course is hands on with students actually participating in simple web designs and programming. It is anticipated that students who complete this course will understand the fields of web design and development and will have a good idea if they want to pursue this degree as a major.</p>
+            <p>Technology: HTML,CSS</p>
+            </figure>
+            <figure>
+            <h2>CSE 111:<br>Programming with Functions</h2>
+            <p>Credits: 2</p>
+            <p>Certificate: Web and Computer Programming</p>
+            <p>Description: CSE 111 students become more organized, efficient, and powerful computer programmers by learning to research and call functions written by others; to write, call , debug, and test their own functions; and to handle errors within functions. CSE 111 students write programs with functions to solve problems in many disciplines, including business, physical science, human performance, and humanities.</p>
+            <p>Technology: Python</p>
+            </figure>
+            <figure>
+            <h2>CSE 210:<br>Programming with Classes</h2>
+            <p>Credits: 2</p>
+            <p>Certificate: Web and Computer Programming</p>
+            <p>Description: This course will introduce the notion of classes and objects. It will present encapsulation at a conceptual level. It will also work with inheritance and polymorphism.</p>
+            <p>Technology: C#</p>
+            </figure>
+            <figure class="completed-course">
+            <h2>WDD 131:<br>Dynamic Web Fundamentals</h2>
+            <p>Credits: 2</p>
+            <p>Certificate: Web and Computer Programming</p>
+            <p>Description: This course builds on prior experience in Web Fundamentals and programming. Students will learn to create dynamic websites that use JavaScript to respond to events, update content, and create responsive user experiences.</p>
+            <p>Technology: HTML,CSS,JavaScript</p>
+            </figure>
+            <figure>
+            <h2>WDD 231:<br>Frontend Web Development I</h2>
+            <p>Credits: 2</p>
+            <p>Certificate: Web and Computer Programming</p>
+            <p>Description: This course builds on prior experience with Dynamic Web Fundamentals and programming. Students will focus on user experience, accessibility, compliance, performance optimization, and basic API usage.</p>
+            <p>Technology: HTML,CSS,JavaScript</p>
+            </figure></div>    
+        </section>
+    </main>
+    <footer>
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com/lebogang-masenya" target="_blank">
+                <img src="images/facebook.webp" alt="Facebook Icon" width="16" height="16">
+            </a>
+            <a href="https://github.com/lcmasenya" target="_blank">
+                <img src="images/github.webp" alt="Github Icon" width="16" height="16">
+            </a>
+            <a href="www.linkedin.com/in/lebogang-masenya-062138301" target="_blank">
+                <img src="images/linkedin.webp" alt="LinkedIn Icon" width="16" height="16">
+            </a>
+            <div>
+                <p>©<span id="currentYear">2026</span> | Lebogang Masenya | South Africa</p>
+                <p>Last Modification: <span id="lastModified">07/10/2026 18:56:46</span></p>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>

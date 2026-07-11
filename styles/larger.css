@@ -1,0 +1,49 @@
+@media only screen and (min-width: 38rem) {
+
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 24px auto;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation li {
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .hero {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        justify-content: center;
+        column-gap: 10px;
+    }
+
+    #card-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        column-gap: 10px;
+        min-height: 400px;
+    }
+}
