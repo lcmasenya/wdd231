@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pretoria Chamber</title>
+    <meta name="description" content="The chamber of commerce for my city of residence">
+    <meta name="author" content="Lebogang Masenya">
+    <link rel="icon" type="image/ico" href="images/andrews-logo.ico">
+    <meta property="og:title" content="Directory for Andrews Chamber of Commerce">
+    <meta property="og:description" content="Directory for members of the Andrews Chamber of Commerce. These companies will help you settle in our community.">
+    <meta property="og:url" content="https://ward-wolf.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://ward-wolf.github.io/wdd231/chamber/images/andrews-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:ital,wght@0,300;0,400;0,700;1,400&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+    <script src="scripts/date.js" defer=""></script>
+    <script src="scripts/navigation.js" defer=""></script>
+    <script src="scripts/directory.js" defer=""></script>
+</head>
+<body>
+    <header>
+        <div class="header-bar">
+            <img src="images/mabopane-logo.png" alt="Mabopane City Logo" width="200" height="150">
+            <span>Mabopane Chamber of Commerce</span>
+            <div class="header-top">
+                <button type="button" id="menu" aria-label="Menu" aria-expanded="false" aria-controls="nav-bar">☰</button>
+            </div>
+        </div>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class=""><a href="index.html">Home</a></li>
+                <li class="current"><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Directory</h1>
+        <section class="members">
+            <div class="grid-list-buttons">
+                <button type="button" id="grid" class="active">Grid</button>
+                <button type="button" id="list">List</button>
+            </div>
+            <section>
+                <div class="top"><img src="images/Mabopane-Square.jpg" alt="Mabopane Square" loading="lazy" width="80" height="80">
+                <p class="tagline">Everything you need, right at the Mabopane Shopping Center.</p>
+                </div>
+                <h2>Mabopane Square</h2><hr><p><strong>WEBSITE:</strong> https://m.facebook.com/MabopaneSquare/</p><p><strong>PHONE:</strong> 012-867-9992</p>
+            </section>
+            <section>
+                <div class="top"><img src="images/unjani-clinic.jpg" alt="Unjani Clinic" loading="lazy" width="80" height="80"><p class="tagline">People first.</p></div><h2>Unjani Clinic</h2><hr><p><strong>PHONE:</strong> 069-581-9547</p><p><strong>URL:</strong> http://www.unjaniclinic.co.za/</p>
+            </section>
+            <section>
+                <div class="top"><img src="images/mediclinic-Legae.webp" alt="Legae Mediclinic" loading="lazy" width="80" height="80"><p class="tagline">Compassionate care for every member of the community.</p></div><h2>Mediclinic Hospital</h2><p><strong>PHONE:</strong> 086-113-3133</p><p><strong>URL:</strong> https://www.mediclinic.co.za/en/legae/home.html?utm_source=google_maps&utm_medium=website_link&utm_campaign=SP&utm_content=SP</p>
+            </section>
+            <section>
+                <div class="top"><img src="images/beauty-salon.webp" alt="Beauty Salon" loading="lazy" width="80" height="80"><p class="tagline">Beauty boost confidence.</p></div><h2>Beauty Salon</h2><p><strong>PHONE:</strong> 064-300-6828</p>
+            </section>
+            <section>
+                <div class="top"><img src="images/odi-stadium.webp" alt="Odi Stadium" loading="lazy" width="80" height="80"><p class="tagline">The place of sport tournaments.</p></div><h2>Odi Stadium</h2><p><strong>PHONE:</strong> 073-942-0103</p>
+            </section>
+            <section>
+                <div class="top"><img src="images/gold-rush-resort.jpg" alt="Goldrush Resort" loading="lazy" width="80" height="80"><p class="tagline">We bring fun to you.</p></div><h2>Goldrush Resort</h2><p><strong>PHONE:</strong> 012-799-0000</p><p><strong>URL:</strong> https://goldrush-bingo.co.za/</p>
+            </section>
+            <section>
+                <div class="top"><img src="images/fuel-station.avif" alt="BP Fuel Station" loading="lazy" width="80" height="80"><p class="tagline">Running low on fuel? Say no more!.</p></div><h2>BP Fuel Station</h2><p><strong>PHONE:</strong> 012-702-3745</p><p><strong>URL:</strong> https://www.bp.com/en_za/on-the-road/south-africa.html</p>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="address">
+            <p>Mabopane Chamber of Commerce</p>
+            <p>1112 Winter street</p>
+            <p>Pretoria, Gauteng, South Africa</p>
+            <p>info@mabopane.com</p>
+            <p>012-555-2851</p>
+        </div>
+        <div class="socialmedia">
+            <a href="https://www.facebook.com/"><img src="images/facebook.webp" alt="Facebook" width="30" height="30" loading="lazy"></a>
+            <a href="https://www.linkedin.com/"><img src="images/linkedin.webp" alt="LinkedIn" width="30" height="30" loading="lazy"></a>
+        </div>
+        <div class="my-data">
+            <p>WDD231 Class Project</p>
+            <p>Lebogang Masenya</p>
+            <p>©<span id="currentyear">2026</span> <span aria-hidden="true"></span> Pretoria Chamber of Commerce <span aria-hidden="true"></span></p>
+            <p>Last Modification: <span id="lastModified">07/16/2026 17:51:55</span></p>
+        </div>
+    </footer>
+</body>
+</html>
