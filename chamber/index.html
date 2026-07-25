@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory for Mabopane Chamber of Commerce</title>
+    <meta name="description" content="The chamber of commerce for my city of residence Mabopane">
+    <meta name="author" content="Lebogang Masenya">
+    <meta property="og:title" content="Directory for Mabopane Chamber of Commerce">
+    <meta property="og:description" content="The chamber of commerce for my city of residence Mabopane">
+    <meta property="og:url" content="https://lcmasenya.github.io/wdd231/chamber/images/mabopane-logo.png">
+    <meta property="og:image" content="https://lcmasenya.github.io/wdd231/chamber/directory.html">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet" media="print" onload="this.media='all'">
+</head>
+
+<body>
+    <header>
+        <img src="images/mabopane-logo.png" alt="Mabopane site logo" width="24" height="24">
+        <span>Mabopane Chamber of Commerce</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="https://lcmasenya.github.io/wdd231/chamber/directory.html">Directory</a></li>
+            <li><a href="https://lcmasenya.github.io/wdd231/chamber/join.html">Join</a></li>
+            <li><a href="https://lcmasenya.github.io/wdd231/chamber/discover.html">Discover</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section class="hero">
+            <h2 class="sr-only">Join the Mabopane Chamber of Commerce</h2>
+            <img src="images/mabopane-square.jpg" alt="Mabopane Square building" width="1600"
+                height="900" loading="eager">
+            <div class="action-area">
+                <a href="join.html" id="cta-button">Join the Mabopane Chamber of Commerce</a>
+            </div>
+        </section>
+        <div class="news">
+            <article>
+                <h2>Current Events</h2>
+                <p>In mid-July 2026, civic mobilization under the "March and March Mabopane" initiative across Wards 20 and 21 highlighted community grievances regarding unauthorized informal trading and undocumented immigration, resulting in the formal submission of localized crime metrics to the South African Police Service (SAPS). 
+                    Concurrently, a multidisciplinary law enforcement intervention successfully dismantled an unpermitted commercial market within the Mabopane Transport Hub to optimize commuter transit and enforce municipal zoning bylaws. 
+                    Structurally, the City of Tshwane municipal administration initiated critical infrastructure rehabilitation on the primary thoroughfare leading to the Sedilega Clinic in Block U, Ward 22, thereby extending public works development frameworks recently executed in Ward 29.
+                </p>
+            </article>
+            <section class="weather">
+                <div id="current">
+                    <h2>Current Temperature in Mabopane<br><span id="current-temp"></span></h2>
+                    <figure id="current-weather">
+                        <figcaption></figcaption>
+                    </figure>
+                </div>
+                <div id="forecast">
+                    <h2>3 Day forecast for Mabopane</h2>
+                    <div id="forecast-cards" class="grid"></div>
+                </div>
+            </section>
+        </div>
+        <aside>
+            <h2>Company Spotlights</h2>
+            <div id="spotlights" class="grid"></div>
+        </aside>
+    </main>
+    <footer>
+        <div>
+            <p>Mabopane Chamber of Commerce</p>
+            <p>1112 Winter street</p>
+            <p>Pretoria, Gauteng, South Africa</p>
+            <p>info@mabopane.com</p>
+            <p>012-555-2851</p>
+        </div>
+
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="images/facebook.webp" alt="Facebook Icon" width="44" height="44">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+                <img src="images/linkedin.webp" alt="LinkedIn Icon" width="44" height="44">
+            </a>
+        </nav>
+
+        <div>
+            <p>©<span id="currentYear">2026</span> | Lebogang Masenya | South Africa</p>
+            <p>Last Modification: <span id="lastModified">07/10/2026 18:56:46</span></p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+{
+  "members": [
+    {
+      "company": "Mediterranean Shipping Company",
+      "imagefile": "msc.webp",
+      "phone": "+27 12 335 6980",
+      "address": "510 Paul Kruger St, Eloffsdal, Pretoria",
+      "url": "https://www.msc.com",
+      "level": 3,
+      "years": 20
+    },
+    {
+      "company": "Hahn & Hahn Inc.",
+      "imagefile": "hahn.webp",
+      "phone": "+27 12 423 1234",
+      "address": "222 Richard St, Hatfield, Pretoria",
+      "url": "https://www.sapat.co.za",
+      "level": 2,
+      "years": 65
+    },
+    {
+      "company": "RussellStone Group",
+      "imagefile": "russellstone.webp",
+      "phone": "+27 12 482 6600",
+      "address": "510 Makou St, Monument Park, Pretoria",
+      "url": "https://www.russellstone.co.za",
+      "level": 3,
+      "years": 15
+    },
+    {
+      "company": "AfriGIS",
+      "imagefile": "afrigis.webp",
+      "phone": "+27 12 844 9500",
+      "address": "476 Kiepersol St, Lynnwood, Pretoria",
+      "url": "https://www.afrigis.co.za",
+      "level": 2,
+      "years": 25
+    },
+    {
+      "company": "Boxfusion",
+      "imagefile": "boxfusion.webp",
+      "phone": "+27 12 004 0060",
+      "address": "Pretoria, Gauteng",
+      "url": "https://www.boxfusion.co.za",
+      "level": 3,
+      "years": 12
+    }
+  ]
+}

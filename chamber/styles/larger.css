@@ -16,28 +16,9 @@
 
     .navigation {
         display: block;
-        width: auto;
-        margin-left: auto;
     }
 
     .navigation ul {
-        flex-direction: row;
-        gap: 0.75rem;
-        padding-top: 0;
-    }
-
-    /* Grid / List toggle buttons */
-    .grid-list-buttons {
-        justify-content: center;
-    }
-
-    .grid-list-buttons button {
-        flex: none;
-        padding: 0.5rem 2rem;
-    }
-
-    /* List view with table style columns */
-    #cards.list-view section {
         display: flex;
         flex-direction: row;
         align-items: center;
