@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You</title>
+  <meta name="description" content="chamber of commerce web site for the city of Mabopane. HTML, CSS, JavaScript, Json">
+  <meta name="author" content="Lebogang Masenya">
+  <meta property="og:title" content="Mabopane Chamber of Commerce | Join">
+  <meta property="og:description" content="Chamber of commerce web site for the city of Mabopane. HTML, CSS, JavaScript, Json">
+  <meta property="og:image" content="https://lcmasenya.github.io/wdd231/chamber/images/pikes-peak.svg">
+  <meta property="og:url" content="https://lcmasenya.github.io/wdd231/chamber/join.html">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/smaller.css">
+  <link rel="stylesheet" href="styles/join.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="icon" href="favicon.ico">
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/navigation.js" defer=""></script>
+  <script src="scripts/thankyou.js" defer=""></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800& amp;display=swap" rel="stylesheet" media="all" onload="this.media='all'">
+  <script src="chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/js/recordConsoleEvents.js"></script>
+</head>
+<body>
+  <header>
+     <img src="images/mabopane-logo.png" alt="site logo" width="24" height="24">
+        <span>Mabopane Chamber of Commerce</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+  </header>
+
+  <main>
+    <section class="thankyou-card">
+      <h1>🎉 Thank You for Joining!</h1>
+      <p>We appreciate your application. Below are the details you submitted:</p>
+
+      <div id="submittedData" class="submitted-data"></div>
+
+      <p class="next-step">Our team will review your application and contact you soon.</p>
+      <a href="index.html" class="button">Return to Home</a>
+    </section>
+  </main>
+
+  <footer>
+     <div class="address">
+            <p>Mabopane Chamber of Commerce</p>
+            <p>1112 Winter street</p>
+            <p>Pretoria, Gauteng, South Africa</p>
+            <p>info@mabopane.com</p>
+            <p>012-555-2851</p>
+        </div>
+        <div class="socialmedia">
+            <a href="https://www.facebook.com/"><img src="images/facebook.webp" alt="Facebook" width="30" height="30" loading="lazy"></a>
+            <a href="https://www.linkedin.com/"><img src="images/linkedin.webp" alt="LinkedIn" width="30" height="30" loading="lazy"></a>
+        </div>
+        <div class="my-data">
+            <p>WDD231 Class Project</p>
+            <p>Lebogang Masenya</p>
+            <p>©<span id="currentyear">2026</span> <span aria-hidden="true"></span> Pretoria Chamber of Commerce <span aria-hidden="true"></span></p>
+            <p>Last Modification: <span id="lastModified">07/16/2026 17:51:55</span></p>
+  </footer>
+</body>
+</html>
+

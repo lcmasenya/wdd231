@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mabopane Chamber of Commerce| Join</title>
+  <meta name="description" content="The chamber of commerce for my city of residence Mabopane. HTML, CSS, JavaScript, Json">
+  <meta name="author" content="Lebogang Masenya">
+  <meta property="og:title" content="Mabopane Chamber of Commerce | Join">
+  <meta property="og:description" content="Chamber of commerce website for the city of Mabopane. HTML, CSS, JavaScript, Json">
+  <meta property="og:image" content="https://lcmasenya.github.io/wdd231/chamber/images/pikes-peak.svg">
+  <meta property="og:url" content="https://lcmasenya.github.io/wdd231/chamber/join.html">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/smaller.css">
+  <link rel="stylesheet" href="styles/join.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="icon" href="favicon.ico">
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/navigation.js" defer=""></script>
+  <script src="scripts/join.js" defer=""></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800& amp;display=swap" rel="stylesheet" media="all" onload="this.media='all'">
+  <script src="chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/js/recordConsoleEvents.js"></script>
+</head>
+<body>
+  <header>
+      <img src="images/mabopane-logo.png" alt="site logo" width="24" height="24">
+        <span>Mabopane Chamber of Commerce</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+  </header>
+  <nav id="nav-bar" class="navigation">
+      <ul>
+           <li><a href="https://lcmasenya.github.io/wdd231/chamber/index.html">Home</a></li>
+           <li><a href="https://lcmasenya.github.io/wdd231/chamber/directory.html">Directory</a></li>
+           <li class="active"><a href="#">Join</a></li>
+           <li><a href="https://lcmasenya.github.io/wdd231/chamber/discover.html">Discover</a></li>
+      </ul>
+  </nav>
+
+  <main class="join-layout">
+    <!-- Step 1: Form -->
+    <section class="form-section">
+      <h1>Join the Chamber</h1>
+      <form method="get" action="thankyou.html">
+        <label>
+          First Name:
+          <input type="text" name="firstName" title="First Name" autocomplete="given-name" required>
+        </label>
+
+        <label>
+          Last Name:
+          <input type="text" name="lastName" title="Last Name" autocomplete="family-name" required>
+        </label>
+
+        <label>
+          Organizational Title:
+          <input type="text" name="orgTitle" title="Organizational Title" autocomplete="organization-title"
+                 pattern="[A-Za-z\\-\\s]{7,}">
+        </label>
+
+        <label>
+          Email:
+          <input type="email" name="email" title="Email Address" autocomplete="email"
+                 placeholder="example@domain.com" required>
+        </label>
+
+        <label>
+          Mobile Phone:
+          <input type="tel" name="mobile" title="Mobile Phone" autocomplete="tel" required>
+        </label>
+
+        <label>
+          Organization Name:
+          <input type="text" name="organization" title="Organization Name" autocomplete="organization" required>
+        </label>
+
+        <label>
+          Membership Level:
+          <select name="membership" title="Membership Level" required>
+            <option value="np">NP Membership (Non-Profit)</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+          </select>
+        </label>
+
+        <label>
+          Organization Description:
+          <textarea name="description" title="Organization Description"></textarea>
+        </label>
+
+        <input type="hidden" id="timestamp" name="timestamp">
+
+        <button type="submit">Submit Application</button>
+      </form>
+    </section>
+
+    <!-- Step 2: Membership Cards -->
+    <section class="membership-cards">
+      <div class="card bronze">
+        <h2>Bronze Membership</h2>
+        <a href="#bronzeModal">Learn More</a>
+      </div>
+      <div class="card silver">
+        <h2>Silver Membership</h2>
+        <a href="#silverModal">Learn More</a>
+      </div>
+      <div class="card gold">
+        <h2>Gold Membership</h2>
+        <a href="#goldModal">Learn More</a>
+      </div>
+      <div class="card np">
+        <h2>NP Membership</h2>
+        <a href="#npModal">Learn More</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Step 2 continued: Modals -->
+  <div id="bronzeModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Bronze Membership Benefits</h2>
+      <ul>
+        <li>Access to chamber events</li>
+        <li>Basic advertising opportunities</li>
+        <li>Networking sessions</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="silverModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Silver Membership Benefits</h2>
+      <ul>
+        <li>Includes Bronze benefits</li>
+        <li>Discounts on training</li>
+        <li>Spotlight advertising</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="goldModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Gold Membership Benefits</h2>
+      <ul>
+        <li>Includes Silver benefits</li>
+        <li>Premium event access</li>
+        <li>Homepage spotlight position</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="npModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>NP Membership Benefits</h2>
+      <ul>
+        <li>No fee for non-profits</li>
+        <li>Access to networking events</li>
+        <li>Community support programs</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+        <div class="address">
+            <p>Mabopane Chamber of Commerce</p>
+            <p>1112 Winter street</p>
+            <p>Pretoria, Gauteng, South Africa</p>
+            <p>info@mabopane.com</p>
+            <p>012-555-2851</p>
+        </div>
+        <div class="socialmedia">
+            <a href="https://www.facebook.com/"><img src="images/facebook.webp" alt="Facebook" width="30" height="30" loading="lazy"></a>
+            <a href="https://www.linkedin.com/"><img src="images/linkedin.webp" alt="LinkedIn" width="30" height="30" loading="lazy"></a>
+        </div>
+        <div class="my-data">
+            <p>WDD231 Class Project</p>
+            <p>Lebogang Masenya</p>
+            <p>©<span id="currentyear">2026</span> <span aria-hidden="true"></span> Pretoria Chamber of Commerce <span aria-hidden="true"></span></p>
+            <p>Last Modification: <span id="lastModified">07/16/2026 17:51:55</span></p>
+        </div>
+  </footer>
+
+</body>
+</html>
