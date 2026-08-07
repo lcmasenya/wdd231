@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Mabopane Chamber of Commerce</title>
+  <meta name="description" content="Discover Mabopane Chamber of Commerce – explore local businesses and attractions.">
+  <meta name="author" content="Lebogang Masenya">
+  <link rel="icon" href="images/mabopane-logo.png" type="image/png">
+
+  <!-- Social Sharing -->
+  <meta property="og:title" content="Discover Mabopane Chamber of Commerce">
+  <meta property="og:description" content="Directory and highlights of Mabopane Chamber of Commerce members and attractions.">
+  <meta property="og:image" content="images/mabopane-logo.png">
+  <meta property="og:url" content="https://lcmasenya.github.io/wdd231/finalproject/discover.html">
+
+  <!-- Fonts & Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <!-- Scripts -->
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/getdates.js" defer=""></script>
+  <script src="scripts/discover.js" type="module"></script>
+</head>
+<body>
+  <header>
+    <div class="header-bar">
+      <img src="images/mabopane-logo.png" alt="Mabopane Logo" width="80" height="80">
+      <span>Mabopane Chamber of Commerce</span>
+      <button id="menu" aria-label="Menu" aria-expanded="false" aria-controls="nav-bar">☰</button>
+    </div>
+    <nav id="nav-bar" class="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li class="active"><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Discover Mabopane</h1>
+    <p id="welcome"></p>
+
+    <!-- Grid/List Toggle -->
+    <div class="grid-list-buttons">
+      <button id="grid" class="active">Grid</button>
+      <button id="list">List</button>
+    </div>
+
+    <!-- Dynamic Content -->
+    <section id="all-places" class="grid-layout">
+      <!-- Cards injected by discover.js -->
+    </section>
+  </main>
+
+  <footer>
+    <div class="address">
+      <p>Mabopane Chamber of Commerce</p>
+      <p>1112 Winter Street, Pretoria, Gauteng, South Africa</p>
+      <p>Email: info@mabopane.com | Phone: 012-555-2851</p>
+    </div>
+
+    <nav class="socialmedia">
+      <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.webp" alt="Facebook" width="30" height="30"></a>
+      <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.webp" alt="LinkedIn" width="30" height="30"></a>
+    </nav>
+
+    <div class="my-data">
+      <p>WDD231 Class Project | Lebogang Masenya</p>
+      <p>© <span id="currentyear"></span> Mabopane Chamber of Commerce</p>
+      <p>Last Modification: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>
+f
